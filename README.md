@@ -39,21 +39,17 @@ Welcome to the Google API Books Search!
 
 ![google-books-search](./readme-pngs/google-books-search.png)
 
-Use the search box to search the directory by First or Last Name. As you type in letters, the result set will update. It searches both the First Name or the Last Name and searches within the string (like/contains).
+Use the search box to search to search for any book title or author. The results will display. You can click on the View button to view more information about the book or click on Save to save it for later.
 
-![google](./readme-pngs/google.png)
+![search-screen](./readme-pngs/search-screen.png)
 
-Click on a column heading to sort the data in ascending order.
+To view your Saved books, click on the Saved link in the Navbar.
 
-![google](./readme-pngs/google.png)
+![view-saved](./readme-pngs/view-saved.png)
 
-Then click on the column heading again to sort the data in descending order.
+From the Saved Books page, you can also view more information about the book or click Unsave to remove it from your saved books.
 
-![google](./readme-pngs/google.png)
-
-You can sort ascending/descending by any column by clicking on the heading. You can also sort at any time - with or without search results.
-
-![google](./readme-pngs/google.png)
+![unsaved-or-view](./readme-pngs/unsave-or-view.png)
 
 
 ## License 
