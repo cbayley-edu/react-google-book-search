@@ -1,13 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./style.css";
-
 
 function Navbar() {
     return (
-
-
-        <nav className="navbar navbar-expand-lg text-light">
+        <nav className="navbar navbar-dark bg-dark navbar-expand-lg text-light">
             <div className="container">
                 <Link className="navbar-brand" to="/">Google Books</Link>
                 <ul className="navbar-nav">
@@ -26,7 +22,6 @@ function Navbar() {
                 </ul>
             </div>
         </nav>
-
     );
 }
 

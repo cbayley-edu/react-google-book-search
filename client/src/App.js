@@ -6,6 +6,7 @@ import Wrapper from "./components/Wrapper";
 import Search from "./pages/Search";
 import Saved from "./pages/Saved";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

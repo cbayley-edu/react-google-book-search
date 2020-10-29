@@ -1,5 +1,6 @@
-import React, { Component } from "react";
+import React, { Component  } from "react";
 import API from "../../utils/API";
+import './style.css'
 
 class Results extends Component {
 
@@ -30,7 +31,7 @@ class Results extends Component {
         return (
             <div>
                 {!this.props.books.length ? (
-                    <h1 className="text-center">No Results to Display</h1>
+                    <h5><em>Search for Books to Display Results</em></h5>
                 ) : (
                         <div>
                             {this.props.books.map(result => (
@@ -41,11 +42,12 @@ class Results extends Component {
                                         </div>
                                         <div className="col-md-10">
                                             <div className="card-body">
-                                                <h5 className="card-title">{result.title} by {result.authors}</h5>
+                                                <h5 className="card-title">{result.title}</h5>
+                                                <h6>Author(s): {result.authors}</h6>
                                                 <p className="card-text">{result.description}</p>
                                                 <div>
-                                                    <a href={result.link} className="btn badge-pill btn-outline-dark mt-3" target="_blank" >View</a>
-                                                    <button onClick={() => this.handleSave(result)} className="btn badge-pill btn-outline-warning mt-3 ml-3" >
+                                                    <a href={result.link} className="btn btn-dark mt-3 mb-5" target="_blank" >View</a>
+                                                    <button onClick={() => this.handleSave(result)} className="btn btn-secondary mt-3 mb-5" >
                                                         {this.state.savedBooks.map(book => book._id).includes(result._id) ? "Unsave" : "Save"}
                                                     </button>
                                                 </div>
